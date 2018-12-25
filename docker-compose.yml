@@ -1,0 +1,49 @@
+
+version: "3.3"
+
+services:
+  idp:
+    build: 
+      context: ./idp/
+      args:
+        TOMCFG: ./container_files/config/tomcat
+        TOMCERT: ./container_files/credentials/tomcat
+        TOMWWWROOT: ./container_files/wwwroot
+        SHBCFG: ./container_files/config/shib-idp/conf
+        SHBCREDS: ./container_files/credentials/shib-idp
+        SHBVIEWS: ./container_files/config/shib-idp/views
+        SHBEDWAPP: ./container_files/config/shib-idp/edit-webapp
+        SHBMSGS: ./container_files/config/shib-idp/messages
+        SHBMD: ./container_files/config/shib-idp/metadata
+    depends_on:
+     - data
+    networks:
+     - front
+     - back
+    ports:
+     - "443:443"
+
+
+  data:
+    build: ./data/
+    expose:
+     - "389"
+    networks:
+     - back
+    ports:
+     - "389:389"
+    volumes:
+     - shibidp_ldap:/var/lib/dirsrv
+
+
+networks:
+  front:
+    driver: bridge
+  back:    
+    driver: bridge
+
+ 
+volumes:
+  shibidp_ldap:  
+    driver: local
+

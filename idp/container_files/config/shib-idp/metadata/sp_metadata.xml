@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor entityID="http://saml.localhost" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+	<md:SPSSODescriptor AuthnRequestsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+		<md:KeyDescriptor use="signing">
+			<ds:KeyInfo>
+				<ds:X509Data>
+					<ds:X509Certificate>MIIDgTCCAmmgAwIBAgIEDM9ZijANBgkqhkiG9w0BAQsFADBxMQswCQYDVQQGEwJVUzELMAkGA1UE
+CBMCQ0ExFjAUBgNVBAcTDVNhbiBGcmFuY2lzY28xEzARBgNVBAoTClRyYWRlc2hpZnQxEzARBgNV
+BAsTClRyYWRlc2hpZnQxEzARBgNVBAMTClRyYWRlc2hpZnQwHhcNMTcxMjA3MDExMTQwWhcNMjcx
+MjA1MDExMTQwWjBxMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDVNhbiBGcmFu
+Y2lzY28xEzARBgNVBAoTClRyYWRlc2hpZnQxEzARBgNVBAsTClRyYWRlc2hpZnQxEzARBgNVBAMT
+ClRyYWRlc2hpZnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCw3kPP1FXAdAkULJy0
+aGGr2waGzyWj58S6wwOBvIbABkE1rY6xhVHeuNHR/kg9i547ELe/JicCZfPkEGr7Rnu9OM0h6uNx
+57iN9R7cLbWEAJaLxQqfbYnln7xe8o0YvXbG/tuMGWZ8h5SP7fgPuUQMqRBsJ0GlT/UpslmG/qEf
+2BDfcXc6N7XtdAjDhHk8UdJLZUlUD1aytk8Sr03lgqk7ON+Nvc2mzuLmqg1VpZnPMD0tvUd4t2v9
+Ve5Qzi5hrqVFLHhTJcnmHfs+/Yu8a7Qjsup2CBjFtFWTgaONWa0vQ8KDwCzO1rsQfc/1qqaFXQqt
+3ZtgTz8X7fHDdaDK67U/AgMBAAGjITAfMB0GA1UdDgQWBBRGpFf98zB7oITbbre3/yPSIRrmiTAN
+BgkqhkiG9w0BAQsFAAOCAQEAAMXK5rmyIbSiPShjhgNbi+THLfGYU9SIvxjo9V8j25KpEo0Plgwf
+81QXrtD5KYmCMjbRAkgGlvXsXrBwKxW34VGI2uzmOaIr5ZBqTdt3F3+I0TZXJVoQ64YkRr11lO82
+UB6fUr6VGba1CYHgS7O65692/HMuNf4dAhUpUj5iRO2zmvxtI9On1VZUUY7CELh/Z5Cc6Ig5YwFQ
+qt3iZ3ZTQIntVXIo5KDzujiyHXU6oKlfLCSbCpEQJ62mEV8BTct3WTDU+SHkh2Xz3nCYbhmxf8is
+RXgvgqTnl7lEDNtcjYhkRPxvbo4i4ETwIfu69v0e69Bwaznj0Vokx+BKfYFxrg==</ds:X509Certificate>
+				</ds:X509Data>
+			</ds:KeyInfo>
+		</md:KeyDescriptor>
+		<md:NameIDFormat xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/saml/saml/SAMLAssertionConsumer" index="0" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"/>
+	</md:SPSSODescriptor>
+	<md:Organization xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+		<md:OrganizationName xml:lang="en">Tradeshift</md:OrganizationName>
+		<md:OrganizationDisplayName xml:lang="en">Tradeshift</md:OrganizationDisplayName>
+		<md:OrganizationURL xml:lang="en">https://www.tradeshift.com</md:OrganizationURL>
+	</md:Organization>
+	<md:ContactPerson contactType="technical" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+		<md:Company>Tradeshift Support</md:Company>
+		<md:EmailAddress>support@tradeshift.com</md:EmailAddress>
+	</md:ContactPerson>
+</md:EntityDescriptor>
