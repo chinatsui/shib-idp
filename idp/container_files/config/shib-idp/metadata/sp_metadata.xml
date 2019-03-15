@@ -27,12 +27,12 @@ RXgvgqTnl7lEDNtcjYhkRPxvbo4i4ETwIfu69v0e69Bwaznj0Vokx+BKfYFxrg==</ds:X509Certifi
 		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/saml/saml/SAMLAssertionConsumer" index="0" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"/>
 	</md:SPSSODescriptor>
 	<md:Organization xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
-		<md:OrganizationName xml:lang="en">Tradeshift</md:OrganizationName>
-		<md:OrganizationDisplayName xml:lang="en">Tradeshift</md:OrganizationDisplayName>
-		<md:OrganizationURL xml:lang="en">https://www.tradeshift.com</md:OrganizationURL>
+		<md:OrganizationName xml:lang="en">Universe-42</md:OrganizationName>
+		<md:OrganizationDisplayName xml:lang="en">Universe-42</md:OrganizationDisplayName>
+		<md:OrganizationURL xml:lang="en">https://www.universe-42.com</md:OrganizationURL>
 	</md:Organization>
 	<md:ContactPerson contactType="technical" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
-		<md:Company>Tradeshift Support</md:Company>
-		<md:EmailAddress>support@tradeshift.com</md:EmailAddress>
+		<md:Company>Universe-42</md:Company>
+		<md:EmailAddress>support@universe-42.com</md:EmailAddress>
 	</md:ContactPerson>
 </md:EntityDescriptor>

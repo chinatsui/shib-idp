@@ -34,7 +34,7 @@
 	-->
     <!-- Release eduPersonAffiliation to two specific SPs. -->
     
-    <AttributeFilterPolicy id="forTradeshiftLocal">
+    <AttributeFilterPolicy id="universe-42">
         <PolicyRequirementRule xsi:type="OR">
             <Rule xsi:type="Requester" value="http://saml.localhost" />
         </PolicyRequirementRule>
